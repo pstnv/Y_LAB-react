@@ -8,7 +8,11 @@ function App() {
                 <Route path="/" element={<Navigate to="/login" replace />} />
                 <Route element={<Login />} exact path="/login" />
                 <Route element={<SignUp />} exact path="/signup" />
-                <Route path="*" element={<PageNotFound />} />
+                <Route element={<PageNotFound />} exact path="/not-found" />
+                <Route
+                    path="*"
+                    element={<Navigate to="/not-found" replace />}
+                />
             </Routes>
         </BrowserRouter>
     );
