@@ -6,9 +6,9 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Navigate to="/login" replace />} />
-                <Route element={<Login />} exact path="/login" />
-                <Route element={<SignUp />} exact path="/signup" />
-                <Route element={<PageNotFound />} exact path="/not-found" />
+                <Route element={<Login />} path="login" />
+                <Route element={<SignUp />} path="signup" />
+                <Route element={<PageNotFound />} path="not-found" />
                 <Route
                     path="*"
                     element={<Navigate to="/not-found" replace />}
