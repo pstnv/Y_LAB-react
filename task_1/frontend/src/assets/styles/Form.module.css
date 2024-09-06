@@ -1,0 +1,111 @@
+.form {
+    margin: 0 auto;
+    padding: 20px 50px;
+    width: 100%;
+    max-width: 400px;
+    border: 10px inset rgb(72, 60, 50, 0.2);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.header h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Caveat Brush", cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+}
+
+label:has(.input) {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    margin-left: 6px;
+    padding: 6px 8px;
+    flex: 1;
+    border-radius: 0;
+    border: none;
+    background-color: rgba(229, 231, 233, 0.8);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.input::placeholder {
+    font-size: 13px;
+    color: rgb(0, 0, 0, 0.8);
+    font-weight: 400;
+}
+
+.input:focus {
+    outline: 2px solid var(--brown-color);
+}
+
+.link {
+    text-decoration: none;
+    text-align: end;
+    font-size: 15px;
+    color: var(--brown-color);
+}
+
+.buttonTest {
+    margin: 60px 0 16px;
+    border: none;
+    background-color: transparent;
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 0;
+    border: none;
+    background-color: var(--brown-color);
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.buttonTest span {
+    margin-left: 2px;
+}
+
+@media all and (max-width: 700px) {
+    .form {
+        max-width: 350px;
+    }
+
+    .header h2 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .input {
+        margin: 6px 0;
+        width: 100%;
+    }
+
+    .buttonTest {
+        margin-top: 40px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .form {
+        padding: 20px;
+    }
+
+    .header h2 {
+        font-size: 17px;
+    }
+}
