@@ -47,7 +47,6 @@ const userSlice = createSlice({
         });
         builder.addCase(loginUser.rejected, (state) => {
             state.isLoading = false;
-            console.log("here");
         });
     },
 });
